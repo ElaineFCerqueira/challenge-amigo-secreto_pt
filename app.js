@@ -8,7 +8,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Amigo Secreto');
+    exibirTextoNaTela('h1', 'Meu Amigo Secreto');
     exibirTextoNaTela('h2', 'Digite o nome dos seus amigos');
 }
 
@@ -62,6 +62,7 @@ function sortearAmigo() {
         let nomeSorteado = listaamigo[indiceAleatorio]; // Pega o nome correspondente ao índice
         resultado.innerHTML = nomeSorteado//`🎉 O amigo secreto é: ${nomeSorteado}`; // Exibe o nome sorteado
         responsiveVoice.speak(`Seu amigo secreto é ${nomeSorteado}`, 'Brazilian Portuguese Female', {rate:1.2});
+        
 
     } else {
         alert("A lista de amigos está vazia! Adicione nomes antes de sortear.");
